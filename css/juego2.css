@@ -1,0 +1,93 @@
+ #pares{
+   display: none;
+ }
+ .heading {  
+  text-align: center;  
+  background: rgb(0, 15, 46);  
+  padding: 1rem;  
+  color: bisque;  
+ }  
+ .count-container {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  width: 60%;  
+  margin: auto auto;  
+  padding: 2rem 0;  
+ }  
+ .attempts {  
+  font-size: 2rem;  
+  color: blue;  
+ }   
+ .reset {  
+  font-size: 2rem;  
+  color: blue;  
+  cursor: pointer;  
+  border: 1px solid grey;  
+  padding: .5rem;  
+ }  
+ .reset:hover {  
+  transform: scale(1.2);  
+ }  
+ .time {  
+  font-size: 2rem;  
+  color: blue;  
+ }  
+ .grid {  
+  max-width: 60%;  
+  margin: 0 auto;  
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: space-evenly;  
+ }  
+ .card {  
+  position: relative;  
+  transition: all 0.4s linear;  
+  transform-style: preserve-3d;  
+  margin: 5px;  
+ }  
+/* .card,   */
+  .back,  
+ .front, .card {  
+  height: 100px;  
+  width: 100px;  
+ }  
+ .back,  
+ .front {  
+  position: absolute;  
+  backface-visibility: hidden;  
+ }  
+ .front {  
+  background: #fab942  no-repeat center center /  
+   contain;  
+ }  
+ .back {  
+  transform: rotateY(180deg);  
+  background-color: white;  
+  background-size: contain;  
+  background-repeat: no-repeat;  
+  background-position: center center;  
+ }  
+ .selected {  
+  border: 4px solid blue;  
+  transform: rotateY(180deg);  
+ }  
+ .match .front {  
+  border: 0px;  
+  background: rgb(4, 44, 2) url("../images/comodin.jpg") no-repeat center center /  
+  contain !important;  
+  cursor: not-allowed;  
+  transform: none !important;  
+ }  
+
+
+/*divs */
+#button-container{
+    display:inline-block;
+    position:relative;
+   border: solid 1px red;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    height: 300px;
+    }
