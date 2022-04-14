@@ -7,6 +7,8 @@
     
     <link rel="stylesheet" href="./css/juego2.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/gamepreposition.js" ></script>
+
     <script src="./js/funciones.js" type="module"></script>
     
     
@@ -14,7 +16,20 @@
     <title>Juegos</title>
 </head>
 <body >
-
+  <header>
+    <div id="nav">
+     <input type="checkbox" id="btn-menu">
+     <label for="btn-menu" ><img src="./images/menu.png" alt="icon">  </label>
+     <nav class="menu">
+         <ul id="">
+             <li><a href="index.html">Index </a></li>
+             <li><a href="./acerca.html">About </a></li>
+             <li><a href="./faq.html">FAQ</a></li>
+             <li><a href="./contacto.html"> Contact</a></li> 
+         </ul>
+     </nav>
+         </div>
+ </header>
 
 
 
@@ -40,7 +55,7 @@
   
   <div class=“button-container” id="button-container">
 <h3>Exercise 1</h3>
-<p> what are they playing at?</p>
+<p> What are they playing at?</p>
 
 <img src="./images/conglobos.jpg" alt="Tester"/>
 <button class="alinks" id="btncorr" >They are playing football
@@ -51,7 +66,87 @@
 
 <p class="Resultado1" id="ResPreg1"> </p>
     </div>
+
+    <div class=“button-container” id="button-container">
+      <h3>Exercise 2</h3>
+      <p> How do you get to work?</p>
+      
+      <img src="./images/by_moto.png" alt="Tester"/>
+      <button class="alinks" id="btnIncEj2" >I go to work by boat
+      </button>
+      
+      <button  class="alinks "  id="btnCorrEj2" >I go to work by motorcycle </button>
+      
+      <p class="Resultado1" id="ResPreg2"> </p>
+          </div>
+   <div class=“button-container” id="button-container">
+            <h3>Exercise 3</h3>
+            <p> Who is he ?</p>
+            
+            <img src="./images/conejo.jpg" alt="Tester"/>
+            <button class="alinks" id="btnCorrEj3" >Easter bunny            </button>
+            
+            <button  class="alinks "  id="btnIncEj3" >Santa claus
+            </button>
+            
+            <p class="Resultado1" id="ResPreg3"> </p>
+                </div>
+
+                <hr>
+                <h1 id="h1PM">Prepositions</h1> 
     
-  <script src="./js/juego2.js"></script>
+  </div>
+  <hr id="separatemasw">
+  
+  <!-- ejercicio de partes de placa -->
+  <div id="framePM001">
+    <div id="fontPM001">
+        <h2></h2><text>Questions: <text id="numberPM001">0</text></text><br />
+        <text>Score: <text id="scorePM001">0</text></text>
+        <hr  class="hrjuego">
+        <div id="disappearPM001">
+            <button class="buttonsPM002" onclick="beginPM001()">Start</button>
+        </div>
+        <p id="messagePM001"></p>
+        <p id="messagePM002"></p>
+        <p id="messagePM003"></p>
+        <p id="messagePM004"></p>
+    </div>
+  </div>
+  <!-- fin de ejercicio de placa-->
+  <footer>
+    <div class="footer-left">
+      <p> lorem hkskjfhdkjs hdfshfkjdhs </p>
+      <div class="social">
+      
+      </div>
+      </div>
+      <ul class="footer-right">
+      <li>
+      <h2> no se que poner aca </h2>
+      <ul class="box">
+      <li><a href="">hkjfshkdshfsd</a></li>
+      <li><a href="">nbmcvnbvcb </a></li>
+      <li><a href="">hjdfghhdfl </a></li>
+      </ul>
+      </li>
+      <li class="box">
+      <h2> Address</h2>
+      <ul class="box">
+      <li><a href="">uruguay</a></li>
+      <li><a href="">tel. 4564465 </a></li>
+      <li><a href="">Mail: gdjasgdjg@gmail.com </a></li>
+      </ul>
+      </li>
+      
+      </ul>
+      <div class="footer-bottom">
+      <p>All rights reserved by &copy; Device PC</p>
+      
+      
+      </div>
+  </footer>
+    
+  <script src="./js/memory.js"></script>
  </body>
 </html>

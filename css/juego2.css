@@ -91,3 +91,21 @@
     margin-left: 3%;
     height: 300px;
     }
+
+    @media (max-width: 768px){
+      .attempts {
+       margin-left: -70px;
+        font-size: 25px;
+      }
+       .reset{
+        
+         font-size: 25px;
+       }
+        .time {
+       margin-right: -70px;
+         font-size: 25px;
+       }
+      
+    }
+      
+    
