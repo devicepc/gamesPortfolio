@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="./css/juego2.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/puzzle.css">
     <script src="./js/gamepreposition.js" ></script>
 
     <script src="./js/funciones.js" type="module"></script>
@@ -113,7 +114,45 @@
         <p id="messagePM004"></p>
     </div>
   </div>
-  <!-- fin de ejercicio de placa-->
+
+  <hr id="separatemasw" class="puzzlehr">
+
+
+
+  <title>Puzzle</title><path d="M0 15 l 20 90 l 20 0 l 20 -60 l 20 60 l 20 0 l20 -90 l -20 0 l-10 60 l -20 -60 l-20 0 l -20 60 l -10 -60 z" fill="dodgerBlue"></path><circle id="punt" cx="35" cy="15" r="12" fill="magenta"></circle></svg></a><h1>Puzzle maker <span>1.0</span></h1><div id="seeModel" >see model</div> <input id="modelsButton" type="button" value="Models"><input id="start" type="button" value="Start">
+<br>
+    <div id="tap"><div id="models"></div></div>
+<div style="margin-left: 10px">Drag to place. <br>
+Double click to rotate.</div>
+<div id="containerPuzzle" ></div>
+<div id="time" ></div>
+
+<svg id="base" width="0" height="0" >
+<defs>
+    <filter id="g0">
+      <feOffset result="offOut" in="SourceAlpha" dx="4" dy="4" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="5" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+     <filter id="g1">
+      <feOffset result="offOut" in="SourceAlpha" dx="4" dy="-4" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="5" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>   
+    <filter id="g2">
+      <feOffset result="offOut" in="SourceAlpha" dx="-4" dy="-4" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="5" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+    <filter id="g3">
+      <feOffset result="offOut" in="SourceAlpha" dx="-4" dy="4" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="5" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>	
+ </defs>
+</svg>
+
+<!-- fin de puzzle -->
   <footer>
     <div class="footer-left">
       <p> lorem hkskjfhdkjs hdfshfkjdhs </p>
@@ -148,5 +187,6 @@
   </footer>
     
   <script src="./js/memory.js"></script>
+  <script src="./js/puzzle2.js"></script>
  </body>
 </html>

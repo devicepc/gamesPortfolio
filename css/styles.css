@@ -183,9 +183,22 @@ header label:hover {
     text-decoration: none;
     background-color: #364a62;
     font-size: 20px;
-    
 
 }
+/* puzzle */
+#entorno {
+	display: block;
+	margin: 0 auto;
+    border: #000 solid 1px;
+}
+
+#fondo {
+	opacity: 0.3;
+}
+.puzzlehr{
+    margin-top: 170px;
+}
+
 /* estilo de menu  responsive*/
 @media (max-width:768px){
     header label {
