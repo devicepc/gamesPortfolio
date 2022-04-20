@@ -100,6 +100,7 @@
   <hr id="separatemasw">
   
   <!-- ejercicio de partes de placa -->
+  
   <div id="framePM001">
     <div id="fontPM001">
         <h2></h2><text>Questions: <text id="numberPM001">0</text></text><br />
@@ -119,13 +120,27 @@
 
 
 
-  <title>Puzzle</title><path d="M0 15 l 20 90 l 20 0 l 20 -60 l 20 60 l 20 0 l20 -90 l -20 0 l-10 60 l -20 -60 l-20 0 l -20 60 l -10 -60 z" fill="dodgerBlue"></path><circle id="punt" cx="35" cy="15" r="12" fill="magenta"></circle></svg></a><h1>Puzzle </h1><div id="seeModel" >see model</div> <input id="modelsButton" type="button" value="Models"><input id="start" type="button" value="Start">
+  <title>Puzzle</title><path d="M0 15 l 20 90 l 20 0 l 20 -60 l 20 60 l 20 0 l20 -90 l -20 0 l-10 60 l -20 -60 l-20 0 l -20 60 l -10 -60 z" fill="dodgerBlue"></path><circle id="punt" cx="35" cy="15" r="12" fill="magenta"></circle></svg></a><h1>Puzzle </h1>
+  
+  <div id="resPuzzle">
+    <h3>Que se formo en la imagen? </h3>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="RespPuzzle" name="fname"><br><br>
+      
+      <input type="submit" value="Submit" id="BtnRespPuzzle">
+    </form>
+  </div>
+  <div id="seeModel" >see model</div> <input id="modelsButton" type="button" value="Models"> 
+  <input id="start" type="button" value="Start">
 <br>
-    <div id="tap"><div id="models"></div></div>
+    <div id="tap"><div id="models"></div></div> 
 <div style="margin-left: 10px">Drag to place. <br>
 Double click to rotate.</div>
+
 <div id="containerPuzzle" ></div>
 <div id="time" ></div>
+<div id="Question"></div>
 
 <svg id="base" width="0" height="0" >
 <defs>
@@ -151,6 +166,7 @@ Double click to rotate.</div>
     </filter>	
  </defs>
 </svg>
+
 
 <!-- fin de puzzle -->
   <footer>
@@ -187,6 +203,6 @@ Double click to rotate.</div>
   </footer>
     
   <script src="./js/memory.js"></script>
-  <script src="./js/puzzle2.js"></script>
+  <script src="./js/puzzle.js" ></script>
  </body>
 </html>

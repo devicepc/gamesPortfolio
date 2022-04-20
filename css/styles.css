@@ -198,6 +198,18 @@ header label:hover {
 .puzzlehr{
     margin-top: 170px;
 }
+#resPuzzle{
+    margin-left: 20%;
+    display: none;
+}
+#RespPuzzle{
+    text-transform: lowercase;
+}
+#Question{
+    margin-left: 15%;
+    font-size: 2rem;
+    margin-top: 20px;
+}
 
 /* estilo de menu  responsive*/
 @media (max-width:768px){
