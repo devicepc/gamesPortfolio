@@ -11,7 +11,15 @@
     <script src="./js/gamepreposition.js" ></script>
 
     <script src="./js/funciones.js" type="module"></script>
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-028W4KE5XB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-028W4KE5XB');
+</script>
     
     
     <title>Juegos</title>
@@ -23,10 +31,10 @@
      <label for="btn-menu" ><img src="./images/menu.png" alt="icon">  </label>
      <nav class="menu">
          <ul id="">
-             <li><a href="index.html">Index </a></li>
-             <li><a href="./acerca.html">About </a></li>
-             <li><a href="./faq.html">FAQ</a></li>
-             <li><a href="./contacto.html"> Contact</a></li> 
+             <li><a href="">Index </a></li>
+             <li><a href="">About </a></li>
+             <li><a href="">FAQ</a></li>
+             <li><a href=""> Contact</a></li> 
          </ul>
      </nav>
          </div>
@@ -43,9 +51,9 @@
 </h1>  
  
 <div class="count-container">  
- <p class="attempts">Intentos: <span class="count"></span></p>  
+ <p class="attempts">Attempts: <span class="count"></span></p>  
  <span class="reset">Reset <i class="fas fa-sync"></i></span>  
- <p class="time">Tiempo: <span class="min-count">00</span>: <span class="sec-count">00</span></p>  
+ <p class="time">Time: <span class="min-count">00</span>: <span class="sec-count">00</span></p>  
 </div>  
  <div id="game"></div>
  
@@ -56,7 +64,7 @@
   
   <div class=“button-container” id="button-container">
 <h3>Exercise 1</h3>
-<p> What are they playing at?</p>
+<p> What are they playing ?</p>
 
 <img src="./images/conglobos.jpg" alt="Tester"/>
 <button class="alinks" id="btncorr" >They are playing football
@@ -117,10 +125,56 @@
   </div>
 
   <hr id="separatemasw" class="puzzlehr">
+  <div id="prepositions">
+    <h2>Prepositions of time</h2>
+    <h3>1. Can you come <span id="GapSpan"><select id="ejPrepo"><option value=""> </option><option value="in"> in</option><option value="2"> on</option><option value="at"> at</option></select></span> Monday ?</h3>
+    <button id="btnres1" id="btngen" type="button" onclick="resPrep()">Try it</button>
+    <p id="resp1"></p>
+    <h3>2. It rains a lot <span id="GapSpan2"><select id="ejPrepo2"><option value=""> </option><option value="1"> in</option><option value="2"> on</option><option value="3"> at</option></select></span>  winter.</h3>
+    <button id="btnres2" type="button" class="btngen" onclick="resPrep2()">Try it</button>
+    <p id="resp2"></p>
+    <h3>3. My birthday is  <span id="GapSpan3"><select id="ejPrepo3"><option value=""> </option><option value="in"> in</option><option value="2"> on</option><option value="at"> at</option></select></span> the 6th of May.</h3>
+    <button id="btnres3" type="button" class="btngen" onclick="resPrep3()">Try it</button>
+    <p id="resp3"></p>
+    <h3>4. I usually get up  <span id="GapSpan4"><select id="ejPrepo4"><option value=""> </option><option value="at"> at</option><option value="on"> on</option><option value="in"> in</option></select></span> half past eight</h3>
+    <button id="btnres4" type="button" class="btngen" onclick="resPrep4()">Try it</button>
+    <p id="resp4"></p>
+    <h3>5. I will meet her <span id="GapSpan5"><select id="ejPrepo5"><option value=""> </option><option value="on"> on</option><option value="in"> in</option><option value="at"> at</option></select></span>two months.</h3>
+    <button id="btnres5" type="button" class="btngen" onclick="resPrep5()">Try it</button>
+    <p id="resp5"></p>
+    <h3>6. We usually have lunch <span id="GapSpan6"><select id="ejPrepo6"><option value=""> </option><option value="at"> at</option><option value="on"> on</option><option value="at"> at</option></select></span> one.</h3>
+    <button id="btnres6" type="button" class="btngen" onclick="resPrep6()">Try it</button>
+    <p id="resp6"></p>
+   <!--  <h3>7. We've got English <span id="GapSpan7"><select id="ejPrepo7"><option value=""> </option><option value="in"> in</option><option value="on"> on</option><option value="at"> at</option></select></span> Thursday.</h3>
+    <button id="btnres7" type="button" onclick="resPrep7()">Try it</button>
+    <p id="resp7"></p>
+    <h3>8. My grandfather died <span id="GapSpan8"><select id="ejPrepo8"><option value=""> </option><option value="in"> in</option><option value="on"> on</option><option value="at"> at</option></select></span>1987.</h3>
+    <button id="btnres8" type="button" onclick="resPrep8()">Try it</button>
+    <p id="resp8"></p>
+    <h3>9. Paul isn't here <span id="GapSpan9"><select id="ejPrepo9"><option value=""> </option><option value="in"> in</option><option value="on"> on</option><option value="at"> at</option></select></span> the moment.</h3>
+    <button id="btnres9" type="button" onclick="resPrep9()">Try it</button>
+    <p id="resp9"></p>
+    <h3>10. I'll be back  <span id="GapSpan10"><select id="ejPrepo10"><option value=""> </option><option value="in"> in</option><option value="on"> on</option><option value="at"> at</option></select></span> ten minutes.</h3>
+    <button id="btnres10" type="button" onclick="resPrep10()">Try it</button>
+    <p id="resp10"></p>
+    <h3>11. I'm going to Italy <span id="GapSpan11"><select id="ejPrepo11"><option value=""> </option><option value="in"> in</option><option value="on"> on</option><option value="at"> at</option></select></span> a week.</h3>
+    <button id="btnres11" type="button" onclick="resPrep11()">Try it</button>
+    <p id="resp12"></p>
+    <h3>12. Come and see us <span id="GapSpan12"> <select id="ejPrepo12"><option value=""> </option><option value="in"> in</option><option value="on"> on</option><option value="at"> at</option></select></span> Christmas Day.</h3>
+    <button id="btnres12" type="button" onclick="resPrep12()">Try it</button>
+    <p id="resp13"></p> -->
+    <p id="respTotales"></p>
+    <div id="Points">
+    <p>Answer the questions then press submit</p>
 
+    <button type="button" onclick="dataprept()">Points</button>
+  </div>
+  
+  
+  </div>
 
-
-  <title>Puzzle</title><path d="M0 15 l 20 90 l 20 0 l 20 -60 l 20 60 l 20 0 l20 -90 l -20 0 l-10 60 l -20 -60 l-20 0 l -20 60 l -10 -60 z" fill="dodgerBlue"></path><circle id="punt" cx="35" cy="15" r="12" fill="magenta"></circle></svg></a><h1>Puzzle </h1>
+    <hr id="separatemasw" class="puzzlehr">
+  <title >Puzzle</title><path d="M0 15 l 20 90 l 20 0 l 20 -60 l 20 60 l 20 0 l20 -90 l -20 0 l-10 60 l -20 -60 l-20 0 l -20 60 l -10 -60 z" fill="dodgerBlue"></path><circle id="punt" cx="35" cy="15" r="12" fill="magenta"></circle></svg></a><h1 id="PuzTitle">Puzzles </h1>
   
   <div id="resPuzzle">
     <h3>Que se formo en la imagen? </h3>
@@ -135,7 +189,7 @@
   <input id="start" type="button" value="Start">
 <br>
     <div id="tap"><div id="models"></div></div> 
-<div style="margin-left: 10px">Drag to place. <br>
+<div id="Tutorial" >Drag to place. <br>
 Double click to rotate.</div>
 
 <div id="containerPuzzle" ></div>
@@ -169,6 +223,7 @@ Double click to rotate.</div>
 
 
 <!-- fin de puzzle -->
+
   <footer>
     <div class="footer-left">
       <p> lorem hkskjfhdkjs hdfshfkjdhs </p>
@@ -204,5 +259,6 @@ Double click to rotate.</div>
     
   <script src="./js/memory.js"></script>
   <script src="./js/puzzle.js" ></script>
+  <script src="./js/prepositions.js" ></script>
  </body>
 </html>

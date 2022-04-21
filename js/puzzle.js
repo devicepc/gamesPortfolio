@@ -177,40 +177,47 @@ let models=[
     {
     numRows : 4,
     numCols : 6,
-    urlImg :"arbol.png"
+    urlImg :"arbol.png",
+    named :"TREE"
     },
     {
     numRows : 2,
     numCols : 2,
     urlImg :"barco.jpg",
-    named :"BARCO"
+    named :"BOAT"
     }, 
     {
     numRows : 3,
     numCols : 3,
-    urlImg :"horse.jpg"
+    urlImg :"horse.jpg",
+    named :"HORSE"
     }, 
      {
     numRows : 4,
     numCols : 4,
-    urlImg :"cine.jpg"
+    urlImg :"cine.jpg",
+    named :"CINEMA"
     },  
 
 
      {
     numRows : 5,
     numCols : 5,
-    urlImg :"cat.jpg"
+    urlImg :"cat.jpg",
+    named :"CAT"
     },
         {
     numRows : 5,
     numCols : 7,
-    urlImg :"perro.jpg"
+    urlImg :"perro.jpg",
+    named :"DOG"
     },
             {
     numRows : 6,
     numCols : 8,
-    urlImg :"cuervo.jpg"
+    urlImg :"cuervo.jpg",
+    named :"RAVEN"
+
     },
     
 ]
@@ -310,10 +317,10 @@ function start(){
         const pageWidth = document.documentElement.scrollWidth
         console.log("tamañano de pagina :" + pageWidth);
         if(pageWidth >= 1462){
-        e.style.top= 2000+ Math.random()*100 +"px"   
+        e.style.top= 3000+ Math.random()*100 +"px"   
         e.style.left=Math.random()*(window.innerWidth -100) +"px" 
     }else if(pageWidth <= 1000){
-        e.style.top= 3600+ Math.random()*100 +"px"   
+        e.style.top= 4600+ Math.random()*100 +"px"   
         e.style.left=Math.random()*(window.innerWidth -100) +"px"
     }
         setTimeout(function(){
